@@ -52,8 +52,8 @@ html,body{
 .wrap .back{
     display: block;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 0;
+    bottom: 0;
     width: 50px;
     height: 40px;
     background: rgba(231, 232, 233, 0.2) url(../image/back.png) no-repeat center center;

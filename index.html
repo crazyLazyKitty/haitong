@@ -11,130 +11,23 @@
         <div class="wrap">
             <div class="index" id="index">
                 <div class="btn-g">
-                    <a href="#matou" class="btn">
+                    <a href="matou.html" class="btn">
                         <img src="image/index_btn_1.png" alt="">
                     </a>
-                    <a href="#keshihua" class="btn">
+                    <a href="keshihua.html" class="btn">
                         <img src="image/index_btn_2.png" alt="">
                     </a>
-                    <a href="#jifang" class="btn">
+                    <a href="jifang.html" class="btn">
                         <img src="image/index_btn_3.png" alt="">
                     </a>
-                    <a href="#danganshi" class="btn">
+                    <a href="danganshi.html" class="btn">
                         <img src="image/index_btn_4.png" alt="">
                     </a>
-                    <a href="#guanli" class="btn">
+                    <a href="guanli.html" class="btn">
                         <img src="image/index_btn_5.png" alt="">
                     </a>
                 </div>
             </div>
-            <div class="matou" id="matou">
-                <div class="player">
-                    <audio src="mp3/matou.mp3"></audio>
-                </div>
-                <div class="details">
-                    <img src="image/matou_details_1.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/matou_details_2.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/matou_details_3.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/matou_details_4.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/matou_details_5.png" alt="" />
-                </div>
-            </div>
-            <div class="keshihua" id="keshihua">
-                <div class="player">
-                    <audio src="mp3/keshihua.mp3"></audio>
-                </div>
-                <div class="details">
-                    <img src="image/keshihua_details_1.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/keshihua_details_2.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/keshihua_details_3.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/keshihua_details_4.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/keshihua_details_5.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/keshihua_details_6.png" alt="" />
-                </div>
-            </div>
-            <div class="jifang" id="jifang">
-                <div class="player">
-                    <audio src="mp3/jifang.mp3"></audio>
-                </div>
-                <div class="details">
-                    <img src="image/jifang_details_1.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/jifang_details_2.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/jifang_details_3.png" alt="" />
-                </div>
-            </div>
-            <div class="danganshi" id="danganshi">
-                <div class="player">
-                    <audio src="mp3/danganshi.mp3"></audio>
-                </div>
-                <div class="details">
-                    <img src="image/danganshi_details_1.png" alt="" />
-                </div>
-            </div>
-            <div class="guanli" id="guanli">
-                <div class="details">
-                    <img src="image/guanli_details_1.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/guanli_details_2.png" alt="" />
-                </div>
-                <div class="details">
-                    <img src="image/guanli_details_3.png" alt="" />
-                </div>
-            </div>
-            <a class="back" id="goBack" href="#index" style="display:none">
-            </a>
         </div>
-        <script type="text/javascript" src="js/zepto.min.js"></script>
-        <script type="text/javascript">
-            var $palyer = $('.player'),
-                $audioG = $('audio');
-            $palyer.on('click',function() {
-                $audioG.each(function(i,v) {
-                    v.pause();
-                });
-                var $audio = $(this).find('audio');
-                if($audio.length > 0){
-                    $audio = $audio[0];
-                }
-                if($audio.paused){
-                    $audio.play();
-                }else{
-                    $audio.pause();
-                }
-            });
-
-        var $goBack = $('#goBack');
-        $(window).scroll(function() {
-            var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
-            if(scrollt > 300){
-                $goBack.show();
-            }else {
-                $goBack.hide();
-            }
-        });
-        </script>
     </body>
 </html>
