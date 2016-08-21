@@ -1,0 +1,66 @@
+body,div,p,li,img{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+.wrap{
+    min-height: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.wrap img{
+    width: 100%;
+    display: block;
+}
+.index{
+    height: 100%;
+    background: transparent url(../image/index_bg.png) no-repeat 0 0;
+    background-size: 100%;
+    position: relative;
+}
+.index .btn-g{
+    padding-top: 40%;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+.index .btn{
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+}
+.matou,
+.keshihua,
+.jifang,
+.danganshi,
+.guanli{
+    position: relative;
+}
+.wrap .player{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 40px;
+    height: 50px;
+    background: transparent url(../image/player.png) no-repeat center center;
+    background-size: 100%;
+}
+.wrap .back{
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 40px;
+    background: rgba(231, 232, 233, 0.2) url(../image/back.png) no-repeat center center;
+    padding: 0 10px;
+    background-size: 70%;
+    border-radius: 2px;
+}
+.wrap audio{
+    display: none;
+}
